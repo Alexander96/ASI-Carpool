@@ -1,4 +1,4 @@
-------------- Common-CSS----------------*/
+/*------------- Common-CSS----------------*/
 
 body { font-family: 'Open Sans', sans-serif; color: #555; font-size: 14px; font-weight: 300; }
 li { list-style: none;}
@@ -181,6 +181,8 @@ header {
 	text-align: left;
 }
 #create-account_form #email_create,
+#name_create, #username_create,
+#password_create, #password_confirm,
 #login_form #email,
 #login_form #passwd,
 #login_form #login_email,

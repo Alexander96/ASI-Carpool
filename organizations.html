@@ -27,14 +27,97 @@
 	<script src="js/jquery.nicescroll.js"></script>
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/main.js" type="text/javascript"></script>
-	<script>
-		$(document).ready(function(){
-			$('#login-bar').load('./login-bar.html');
-		});
-	</script>
+
+
 </head>
 <body>
-	<div id="login-bar"></div>
+
+
+<!-- TOP HEADER Start
+    ================================================== -->
+
+	<section id="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<p class="contact-action"><i class="fa fa-phone-square"></i>IN CASE OF ANY QUESTIONS, CALL THIS NUMBER: <strong>+359 89 975 658</strong></p>
+				</div>
+				<div class="col-md-3 clearfix">
+					<ul class="login-cart">
+						<li>
+							<a data-toggle="modal" data-target="#myModal" href="#">
+							<i class="fa fa-user"></i>
+								Login
+							</a>
+						</li>
+					</ul>
+				</div>
+							</div> <!-- End Of /.row -->
+		</div>	<!-- End Of /.Container -->
+
+	<!-- LOGIN -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+		    		<div class="modal-header">
+		        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        		<h4 class="modal-title" id="myModalLabel">Sign up / Sign in</h4>
+		      		</div>
+			      	<div class="modal-body clearfix">
+
+						<form action="#" method="post" id="create-account_form" class="std">
+							<fieldset>
+								<h3>Create your account</h3>
+								<div class="form_content clearfix">
+									<p class="text">
+										<span><input placeholder="E-mail address" type="text" id="email_create" name="email_create" value="" class="account_input" required></span>
+									</p>
+									<p>
+										<span><input placeholder="Name" type="text" id="name_create" name="name_create" value="" class="account_input" required></span>
+									</p>
+									<p>
+										<span><input placeholder="Username" type="text" id="username_create" name="username_create" value="" class="account_input" required></span>
+									</p>
+									<p>
+										<span><input placeholder="Password" type="password" id="password_create" name="password_create" value="" class="account_input" required></span>
+									</p>
+									<p>
+										<span><input placeholder="Confirm password" type="password" id="password_confirm" name="pasword_confirm" value="" class="account_input" required></span>
+									</p>
+
+									<p class="submit">
+										<input class="btn btn-primary" type="submit" value="Create account">
+									</p>
+								</div>
+							</fieldset>
+						</form>
+			      		<form action="" method="post" id="login_form" class="std">
+							<fieldset>
+								<h3>Already registered?</h3>
+								<div class="form_content clearfix">
+									<p class="text">
+									<label for="email">E-mail address</label>
+										<span><input placeholder="E-mail address" type="text" id="email" name="email" value="" class="account_input" required></span>
+									</p>
+									<p class="text">
+									<label for="passwd">Password</label>
+										<span><input placeholder="Password" type="password" id="passwd" name="passwd" value="" class="account_input" required></span>
+									</p>
+									<p class="submit">
+										<input class="btn btn-success" type="submit" value="Log in">
+									</p>
+								</div>
+							</fieldset>
+						</form>
+			      	</div>
+			      	<div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      	</div>
+		    	</div>
+		  	</div>
+		</div>
+		<!-- End Login -->
+	</section>  <!-- End of /Section -->
 
 	<!-- MENU Start
     ================================================== -->
@@ -71,6 +154,148 @@
 	<!-- Breadcrumbs Start
     ================================================== -->
 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Administrate an organization</h1>
+			</div>
+			<div class="col-md-6">
+				<div class="pull-right">
+					<button class="btn btn-primary" type="button">Manage other</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="container">
+						<p>
+							<span>
+								<div class="input-group input-group-lg">
+  									<span class="input-group-addon" id="sizing-addon1">Name</span>
+									<input type="text" class="form-control" placeholder="Name" value="Google">
+								</div>
+							</span>
+						</p>
+						<p>
+							<span>
+								<div class="input-group input-group-lg">
+  									<span class="input-group-addon" id="sizing-addon1">Type</span>
+									<input type="text" class="form-control" placeholder="Type" value="Software">
+								</div>
+							</span>
+						</p>
+						<p>
+							<span>
+								<div class="input-group input-group-lg">
+  									<span class="input-group-addon" id="sizing-addon1">Address 1</span>
+									<input type="text" class="form-control" placeholder="Address 1" value="Mountain View, CA">
+								</div>
+							</span>
+						</p>
+						<p>
+							<span>
+								<div class="input-group input-group-lg">
+  									<span class="input-group-addon" id="sizing-addon1">Address 2</span>
+									<input type="text" class="form-control" placeholder="Address 2">
+								</div>
+							</span>
+						</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="container">
+						<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="90%" id="gmap_canvas" src="https://maps.google.com/maps?q=google%2C%20maintain%20view&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:250px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:500px;}</style></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 style="height: 30px" class="panel-title">Employee Accounts<button type="button" class="btn btn-success pull-right">Add</button></h3>
+				</div>
+				<ul class="list-group">
+					<li style="height: 50px" class="list-group-item">
+						Robert A. Booth
+						<span class="label label-success">Founder</span>
+						<span class="label label-warning">CEO</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						Claudia J. Heim
+						<span class="label label-warning">CFO</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						Tiffany K. Dawkins
+						<span class="label label-warning">Manager</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						Stephen R. Matias
+						<span class="label label-default">Employee</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						Frank B. Reid
+						<span class="label label-default">Employee</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 style="height: 30px" class="panel-title"> Company Cars <button type="button" class="btn btn-success pull-right">Add</button>
+					</h3>
+				</div>
+				<ul class="list-group">
+					<li style="height: 50px" class="list-group-item">
+						HONDA Jazz(C479C1F)
+						<span class="label label-success">2019</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						HONDA Jazz(A7EBEF0)
+						<span class="label label-success">2019</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						HONDA Jazz(3B655BA)
+						<span class="label label-success">2019</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						BMW X2(D35347E)
+						<span class="label label-default">2018</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						BMW X2(8DA9149
+						<span class="label label-default">2018</span>
+						)<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						BMW X2(08DD1A5)
+						<span class="label label-default">2018</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+					<li style="height: 50px" class="list-group-item">
+						HONDA Jazz(552CDA8)
+						<span class="label label-default">2017</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+
+					<li style="height: 50px" class="list-group-item">
+						MITSUBISHI Mirage(54B0F8B)
+						<span class="label label-danger">1990</span>
+						<button type="button" class="btn btn-danger pull-right">Remove</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 
 

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Pooly - Create trip</title>
@@ -28,13 +29,36 @@
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script>
-		$(document).ready(function(){
-			$('#login-bar').load('./login-bar.html');
-		});
-	</script>
+        $(document).ready(function () {
+            $('#login-bar').load('./login-bar.html');
+
+            $('#breadcrumb-ride').on("click", function() {
+                $('#loader').load($(this).attr("page"));
+            });
+
+            $('#breadcrumb-config').on("click", function () {
+                $('#loader').load($(this).attr("page"));
+            });
+
+            $('#breadcrumb-start').on("click", function () {
+                $('#loader').load($(this).attr("page"));
+            });
+
+            $('#breadcrumb-dest').on("click", function () {
+                $('#loader').load($(this).attr("page"));
+            });
+
+            $('#breadcrumb-people').on("click", function () {
+                $('#loader').load($(this).attr("page"));
+            });
+
+            $('#breadcrumb-')
+        });
+    </script>
 </head>
+
 <body>
-	<div id="login-bar"></div>
+    <div id="login-bar"></div>
 
     <!-- MENU Start
     ================================================== -->
@@ -42,44 +66,86 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div> <!-- End of /.navbar-header -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- End of /.navbar-header -->
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav nav-main">
+                <ul class="nav navbar-nav nav-main">
 
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="#">Create Trip</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="organizations.html">Organizaitons</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Create Trip</a>
+                    </li>
+                    <li>
+                        <a href="trips.html">Trips</a>
+                    </li>
+                    <li>
+                        <a href="organizations.html">Organizaitons</a>
+                    </li>
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="calendar.html">Calendar</a>
+                    </li>
 
 
-                </ul> <!-- End of /.nav-main -->
-            </div>	<!-- /.navbar-collapse -->
-        </div>	<!-- /.container-fluid -->
-    </nav>	<!-- End of /.nav -->
+                </ul>
+                <!-- End of /.nav-main -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- End of /.nav -->
 
     <!-- Breadcrumbs Start
     ================================================== -->
-    
+
     <div class="container">
         <div class="row">
-            <div class="col-md-2"><h5>Configure route</h4></div>
-            <div class="col-md-1"><h5><i class="fa fa-angle-right"></i></h4></div>
-            <div class="col-md-2"><h5>Starting point</h4></div>
-            <div class="col-md-1"><h5><i class="fa fa-angle-right"></i></h4></div>
-            <div class="col-md-2"><h5>Destination</h3></div>
-            <div class="col-md-1"><h5><i class="fa fa-angle-right"></i></h2></div>
-            <div class="col-md-2"><h5>Add people</h3></div>
+            <div class="col-md-2">
+                <h5>
+                    <a href='#' id="breadcrumb-ride" page='choose-ride.html'> Choose a ride </a>
+                    <i class="fa fa-angle-right"></i>
+                </h5>
+            </div>
+            <div class="col-md-2">
+                <h5>
+                    <a href='#' id="breadcrumb-config" page='configure-route.html'> Configure route </a>
+                    <i class="fa fa-angle-right"></i>
+                </h5>
+            </div>
+            <div class="col-md-2">
+                <h5>
+                    <a href='#' id="breadcrumb-start" page='starting-point.html'> Starting point </a>
+                    <i class="fa fa-angle-right"></i>
+                </h5>
+            </div>
+            <div class="col-md-2">
+                <h5>
+                    <a href='#' id="breadcrumb-dest" page='destination.html'> Destination </a>
+                    <i class="fa fa-angle-right"></i>
+                </h5>
+            </div>
+            <div class="col-md-2">
+                <h5>
+                    <a href='#' id="breadcrumb-people" page='add-people.html'> Add people </a>
+                    <i class="fa fa-angle-right"></i>
+                </h5>
+            </div>
         </div>
     </div>
+
+    <div id="loader"></div>
 
     <!-- FOOTER Start
     ================================================== -->
@@ -122,176 +188,117 @@
                                     <i class="fa fa-linkedin"></i>
                                 </a>
                             </li>
-                        </ul>	<!-- End Of /.social-icon -->
-                    </div>	<!-- End Of /.block -->
-                </div> <!-- End Of /.Col-md-4 -->
+                        </ul>
+                        <!-- End Of /.social-icon -->
+                    </div>
+                    <!-- End Of /.block -->
+                </div>
+                <!-- End Of /.Col-md-4 -->
                 <div class="col-md-4">
                     <div class="block">
                         <h4>GET IN TOUCH</h4>
-                        <p ><i class="fa  fa-map-marker"></i> <span>Carpool EOOD, </span>1000 Sofia, Techpark 50</p>
-                        <p> <i class="fa  fa-phone"></i> <span>Phone:</span> (+359) 895 400 289 </p>
+                        <p>
+                            <i class="fa  fa-map-marker"></i>
+                            <span>Carpool EOOD, </span>1000 Sofia, Techpark 50</p>
+                        <p>
+                            <i class="fa  fa-phone"></i>
+                            <span>Phone:</span> (+359) 895 400 289 </p>
 
-                        <p> <i class="fa  fa-mobile"></i> <span>Mobile:</span> (+359) 894 300 167</p>
+                        <p>
+                            <i class="fa  fa-mobile"></i>
+                            <span>Mobile:</span> (+359) 894 300 167</p>
 
-                        <p class="mail"><i class="fa  fa-envelope"></i>Eamil: <span>info@carpool.com</span></p>
-                    </div>	<!-- End Of /.block -->
-                </div> <!-- End Of Col-md-3 -->
+                        <p class="mail">
+                            <i class="fa  fa-envelope"></i>Eamil:
+                            <span>info@carpool.com</span>
+                        </p>
+                    </div>
+                    <!-- End Of /.block -->
+                </div>
+                <!-- End Of Col-md-3 -->
                 <div class="col-md-4">
                     <div class="block">
                         <h4>UPCOMING TRIPS</h4>
                         <div class="media">
-                              <a class="pull-left" href="#">
-                                <img class="media-object" src="images/trip.png" alt="...">
-                              </a>
-                              <a class="pull-left" href="#">
-                                <img class="media-object" src="images/trip.png" alt="...">
-                              </a>
-                              <a class="pull-left" href="#">
-                                <img class="media-object" src="images/trip.png" alt="...">
-                              </a>
-                              <a class="pull-left" href="#">
-                                <img class="media-object" src="images/trip.png" alt="...">
-                              </a>
-                              <a class="pull-left" href="#">
-                                <img class="media-object" src="images/trip.png" alt="...">
-                              </a>
-                              <a class="pull-left" href="#">
-                                <img class="media-object" src="images/trip.png" alt="...">
-                              </a>
-                        </div>	<!-- End Of /.media -->
-                    </div>	<!-- End Of /.block -->
-                </div> <!-- End Of Col-md-3 -->
-            </div> <!-- End Of /.row -->
-        </div> <!-- End Of /.Container -->
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/trip-1.png" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/trip-6.png" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/trip-3.png" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/trip-4.png" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/trip-5.png" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/trip-2.png" alt="...">
+                            </a>
+                        </div>
+                        <!-- End Of /.media -->
+                    </div>
+                    <!-- End Of /.block -->
+                </div>
+                <!-- End Of Col-md-3 -->
+            </div>
+            <!-- End Of /.row -->
+        </div>
+        <!-- End Of /.Container -->
 
 
 
-    <!-- FOOTER-BOTTOM Start
-    ================================================== -->
+        <!-- FOOTER-BOTTOM Start
+        ================================================== -->
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="block clearfix">
-						<a href="#">
-							<img src="images/logo-pool.png" style="max-width: 250px;margin-bottom:10px;" alt="">
-						</a>
-						<p>
-						    Now coming to Bulgaria! The best Carpooling site you can ever dream of!
-						</p>
-						<h4 class="connect-heading">CONNECT WITH US</h4>
-						<ul class="social-icon">
-							<li>
-								<a class="facebook-icon" href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a class="plus-icon" href="#">
-									<i class="fa fa-google-plus"></i>
-								</a>
-							</li>
-							<li>
-								<a class="twitter-icon" href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a class="pinterest-icon" href="#">
-									<i class="fa fa-pinterest"></i>
-								</a>
-							</li>
-							<li>
-								<a class="linkedin-icon" href="#">
-									<i class="fa fa-linkedin"></i>
-								</a>
-							</li>
-						</ul>	<!-- End Of /.social-icon -->
-					</div>	<!-- End Of /.block -->
-				</div> <!-- End Of /.Col-md-4 -->
-				<div class="col-md-4">
-					<div class="block">
-						<h4>GET IN TOUCH</h4>
-						<p ><i class="fa  fa-map-marker"></i> <span>Carpool EOOD, </span>1000 Sofia, Techpark 50</p>
-						<p> <i class="fa  fa-phone"></i> <span>Phone:</span> (+359) 895 400 289 </p>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="cash-out pull-left">
+                            <li>
+                                <a href="#">
+                                    <img src="images/Visa.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/American-Express.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Maestro.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Apple-Pay.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Revolut.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="copyright-text pull-right">Carpool @2019 Designed by
+                            <a href="https://github.com/alexander96">FMI Experts</a> All Rights Reserved</p>
+                    </div>
+                    <!-- End Of /.col-md-12 -->
+                </div>
+                <!-- End Of /.row -->
+            </div>
+            <!-- End Of /.container -->
+        </div>
+        <!-- End Of /.footer-bottom -->
+    </footer>
+    <!-- End Of Footer -->
 
-						<p> <i class="fa  fa-mobile"></i> <span>Mobile:</span> (+359) 894 300 167</p>
-
-						<p class="mail"><i class="fa  fa-envelope"></i>Eamil: <span>info@carpool.com</span></p>
-					</div>	<!-- End Of /.block -->
-				</div> <!-- End Of Col-md-3 -->
-				<div class="col-md-4">
-					<div class="block">
-						<h4>UPCOMING TRIPS</h4>
-						<div class="media">
-						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/trip-1.png" alt="...">
-						  	</a>
-						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/trip-6.png" alt="...">
-						  	</a>
-						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/trip-3.png" alt="...">
-						  	</a>
-						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/trip-4.png" alt="...">
-						  	</a>
-						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/trip-5.png" alt="...">
-						  	</a>
-						  	<a class="pull-left" href="#">
-						    	<img class="media-object" src="images/trip-2.png" alt="...">
-						  	</a>
-						</div>	<!-- End Of /.media -->
-					</div>	<!-- End Of /.block -->
-				</div> <!-- End Of Col-md-3 -->
-			</div> <!-- End Of /.row -->
-		</div> <!-- End Of /.Container -->
-
-
-
-	<!-- FOOTER-BOTTOM Start
-    ================================================== -->
-
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<ul class="cash-out pull-left">
-							<li>
-								<a href="#">
-									<img src="images/Visa.png" alt="">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/American-Express.png" alt="">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/Maestro.png" alt="">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/Apple-Pay.png" alt="">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="images/Revolut.png" alt="">
-								</a>
-							</li>
-						</ul>
-						<p class="copyright-text pull-right">Carpool @2019 Designed by <a href="https://github.com/alexander96">FMI Experts</a> All Rights Reserved</p>
-					</div>	<!-- End Of /.col-md-12 -->
-				</div>	<!-- End Of /.row -->
-			</div>	<!-- End Of /.container -->
-		</div>	<!-- End Of /.footer-bottom -->
-	</footer> <!-- End Of Footer -->
-
-	<a id="back-top" href="#"></a>
+    <a id="back-top" href="#"></a>
 </body>
+
 </html>

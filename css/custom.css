@@ -1,0 +1,31 @@
+#search-bar {
+  width: 80%;
+  box-sizing: border-box;
+  border: 2px solid #90c320;
+  border-radius: 20px;
+  font-size: 22px;
+  background-color: white;
+  background-image: url("../images/searchicon.png");
+  background-position: 15px 15px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 50px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  margin-left: 10%;
+  margin-top:50px;
+}
+
+#greeting {
+    text-align: center;
+    width: 100%;
+}
+#recent-searches {
+    width:80%;
+    margin-left:10%;
+}
+
+#features {
+    margin-top:20px;
+    margin-bottom: 40px;
+}

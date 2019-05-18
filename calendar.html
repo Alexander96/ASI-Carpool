@@ -27,97 +27,14 @@
 	<script src="js/jquery.nicescroll.js"></script>
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/main.js" type="text/javascript"></script>
-
-
+	<script>
+			$(document).ready(function(){
+				$('#login-bar').load('./login-bar.html');
+			});
+	</script>
 </head>
 <body>
-
-
-<!-- TOP HEADER Start
-    ================================================== -->
-
-	<section id="top">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<p class="contact-action"><i class="fa fa-phone-square"></i>IN CASE OF ANY QUESTIONS, CALL THIS NUMBER: <strong>+359 89 975 658</strong></p>
-				</div>
-				<div class="col-md-3 clearfix">
-					<ul class="login-cart">
-						<li>
-							<a data-toggle="modal" data-target="#myModal" href="#">
-							<i class="fa fa-user"></i>
-								Login
-							</a>
-						</li>
-					</ul>
-				</div>
-							</div> <!-- End Of /.row -->
-		</div>	<!-- End Of /.Container -->
-
-	<!-- LOGIN -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-		    	<div class="modal-content">
-		    		<div class="modal-header">
-		        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        		<h4 class="modal-title" id="myModalLabel">Sign up / Sign in</h4>
-		      		</div>
-			      	<div class="modal-body clearfix">
-
-						<form action="#" method="post" id="create-account_form" class="std">
-							<fieldset>
-								<h3>Create your account</h3>
-								<div class="form_content clearfix">
-									<p class="text">
-										<span><input placeholder="E-mail address" type="text" id="email_create" name="email_create" value="" class="account_input" required></span>
-									</p>
-									<p>
-										<span><input placeholder="Name" type="text" id="name_create" name="name_create" value="" class="account_input" required></span>
-									</p>
-									<p>
-										<span><input placeholder="Username" type="text" id="username_create" name="username_create" value="" class="account_input" required></span>
-									</p>
-									<p>
-										<span><input placeholder="Password" type="password" id="password_create" name="password_create" value="" class="account_input" required></span>
-									</p>
-									<p>
-										<span><input placeholder="Confirm password" type="password" id="password_confirm" name="pasword_confirm" value="" class="account_input" required></span>
-									</p>
-
-									<p class="submit">
-										<input class="btn btn-primary" type="submit" value="Create account">
-									</p>
-								</div>
-							</fieldset>
-						</form>
-			      		<form action="" method="post" id="login_form" class="std">
-							<fieldset>
-								<h3>Already registered?</h3>
-								<div class="form_content clearfix">
-									<p class="text">
-									<label for="email">E-mail address</label>
-										<span><input placeholder="E-mail address" type="text" id="email" name="email" value="" class="account_input" required></span>
-									</p>
-									<p class="text">
-									<label for="passwd">Password</label>
-										<span><input placeholder="Password" type="password" id="passwd" name="passwd" value="" class="account_input" required></span>
-									</p>
-									<p class="submit">
-										<input class="btn btn-success" type="submit" value="Log in">
-									</p>
-								</div>
-							</fieldset>
-						</form>
-			      	</div>
-			      	<div class="modal-footer">
-			        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			      	</div>
-		    	</div>
-		  	</div>
-		</div>
-		<!-- End Login -->
-	</section>  <!-- End of /Section -->
+	<div id="login-bar"></div>
 
 	<!-- MENU Start
     ================================================== -->

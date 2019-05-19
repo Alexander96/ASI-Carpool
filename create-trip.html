@@ -32,6 +32,8 @@
         $(document).ready(function () {
             $('#login-bar').load('./login-bar.html');
 
+            $('#loader').load('./choose-ride.html');
+
             $('#breadcrumb-ride').on("click", function () {
                 $('#loader').load($(this).attr("page"));
             });

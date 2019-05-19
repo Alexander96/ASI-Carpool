@@ -19,38 +19,36 @@
 <body>
     <div class="container" style="margin-bottom:30px;">
         <div class="row">
-            <form>
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                    <p>
-                        <h5 style="color: black;">Choose a vehicle:</h5>
-                    </p>
-                    <h6>
-                        <input style="color: black;" type="radio" name="car" required> My own car </h6>
-                    <h6>
-                        <input style="color: black;" type="radio" name="car" value="company-car" required> A company car </h6>
-                </div>
-                <div id="company-cars" style="display:none;" class="col-md-3">
-                    <p>
-                        <h5 style="color: black;">Select a company car:</h5>
-                    </p>
-                    <h6>
-                        <input style="color: black;" type="radio" name="companycar" value="company-car" required>
-                        <img src="images/car.jpg" height="100" width="187" /> VRO28750 </h6>
-                    <h6>
-                        <input style="color: black;" type="radio" name="companycar" value="company-car" required>
-                        <img src="images/car2.png" height="100" width="187" /> VRO28722 </h6>
-                    <h6>
-                        <input style="color: black;" type="radio" name="companycar" value="company-car" required>
-                        <img src="images/car3.jpg" height="100" width="187" /> VPG34160 </h6>
-                    <h6>
-                        <input style="color: black;" type="radio" name="companycar" value="company-car" required>
-                        <img src="images/car4.png" height="100" width="187" /> CRO79830 </h6>
-                </div>
-                <div class="col-md-3">
-                    <input id="configure-route-btn" type="submit" class="btn btn-success" page="configure-route.html" value="Configure route">
-                </div>
-            </form>
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <p>
+                    <h5 style="color: black;">Choose a vehicle:</h5>
+                </p>
+                <h6>
+                    <input style="color: black;" type="radio" name="car" required> My own car </h6>
+                <h6>
+                    <input style="color: black;" type="radio" name="car" value="company-car" required> A company car </h6>
+            </div>
+            <div id="company-cars" style="display:none;" class="col-md-3">
+                <p>
+                    <h5 style="color: black;">Select a company car:</h5>
+                </p>
+                <h6>
+                    <input style="color: black;" type="radio" name="companycar" value="company-car" required>
+                    <img src="images/car.jpg" height="100" width="187" /> VRO28750 </h6>
+                <h6>
+                    <input style="color: black;" type="radio" name="companycar" value="company-car" required>
+                    <img src="images/car2.png" height="100" width="187" /> VRO28722 </h6>
+                <h6>
+                    <input style="color: black;" type="radio" name="companycar" value="company-car" required>
+                    <img src="images/car3.jpg" height="100" width="187" /> VPG34160 </h6>
+                <h6>
+                    <input style="color: black;" type="radio" name="companycar" value="company-car" required>
+                    <img src="images/car4.png" height="100" width="187" /> CRO79830 </h6>
+            </div>
+            <div class="col-md-3">
+                <div id="configure-route-btn" class="btn btn-success" page="configure-route.html">Configure route</div>
+            </div>
         </div>
     </div>
 </body>

@@ -1,53 +1,64 @@
-<div class="container" style="margin-bottom: 30px;">
-    <form>
-        <div class="row">
-            <div class="col-md-2">
-                <div class="btn btn-primary">Back</div>
-            </div>
-            <div class="col-md-4">
-                <div class="container">
-                    <h5 style="color: black;">Add people</h5>
-                    <input type="text" class="form-control" placeholder="Search for username, first name...">
-                    <br>
-                    <div class="block">
-                        <div class="tag-link">
-                            <a href="" style="text-decoration: none;">Alex</a>
-                            <a href="" style="text-decoration: none;">Sylvia</a>
-                            <a href="" style="text-decoration: none;">Valentin</a>
-                            <a href="" style="text-decoration: none;">Varban</a>
+<head>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $('#dest-back-btn').on("click", function () {
+            $('#loader').load($(this).attr("page"));
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 30px;">
+        <form>
+            <div class="row">
+                <div class="col-md-2">
+                    <div id="dest-back-btn" class="btn btn-primary" page="destination.html">Back</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="container">
+                        <h5 style="color: black;">Add people</h5>
+                        <input type="text" class="form-control" placeholder="Search for username, first name...">
+                        <br>
+                        <div class="block">
+                            <div class="tag-link">
+                                <a href="" style="text-decoration: none;">Alex</a>
+                                <a href="" style="text-decoration: none;">Sylvia</a>
+                                <a href="" style="text-decoration: none;">Valentin</a>
+                                <a href="" style="text-decoration: none;">Varban</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <h5 style="color: black;">Payment method</h5>
+                    <h6>
+                        <input style="color: black;" type="radio" name="payment" required> No payment
+                    </h6>
+                    <h6>
+                        <input style="color: black;" type="radio" name="payment" required>
+                        <img src="images/Visa.png" height="50" width="50">
+                    </h6>
+                    <h6>
+                        <input style="color: black;" type="radio" name="payment" required>
+                        <img src="images/American-Express.png" height="50" width="50">
+                    </h6>
+                    <h6>
+                        <input style="color: black;" type="radio" name="payment" required>
+                        <img src="images/Maestro.png" height="50" width="50">
+                    </h6>
+                    <h6>
+                        <input style="color: black;" type="radio" name="payment" required>
+                        <img src="images/Apple-Pay.png" height="50" width="50">
+                    </h6>
+                    <h6>
+                        <input style="color: black;" type="radio" name="payment" required>
+                        <img src="images/Revolut.png" height="50" width="50">
+                    </h6>
+                </div>
+                <div class="col-md-3">
+                    <input type="submit" class="btn btn-success" value="Confirm trip">
+                </div>
             </div>
-            <div class="col-md-3">
-                <h5 style="color: black;">Payment method</h5>
-                <h6>
-                    <input style="color: black;" type="radio" name="payment" required> No payment
-                </h6>
-                <h6>
-                    <input style="color: black;" type="radio" name="payment" required>
-                    <img src="images/Visa.png" height="50" width="50">
-                </h6>
-                <h6>
-                    <input style="color: black;" type="radio" name="payment" required>
-                    <img src="images/American-Express.png" height="50" width="50">
-                </h6>
-                <h6>
-                    <input style="color: black;" type="radio" name="payment" required>
-                    <img src="images/Maestro.png" height="50" width="50">
-                </h6>
-                <h6>
-                    <input style="color: black;" type="radio" name="payment" required>
-                    <img src="images/Apple-Pay.png" height="50" width="50">
-                </h6>
-                <h6>
-                    <input style="color: black;" type="radio" name="payment" required>
-                    <img src="images/Revolut.png" height="50" width="50">
-                </h6>
-            </div>
-            <div class="col-md-3">
-                <input type="submit" class="btn btn-success" value="Confirm trip">
-            </div>
-        </div>
-    </form>
-</div>
+        </form>
+    </div>
+</body>

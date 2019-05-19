@@ -9,6 +9,10 @@
                 $("#company-cars").hide('slow');
             }
         });
+
+        $('#configure-route-btn').on("click", function () {
+            $('#loader').load($(this).attr("page"));
+        });
     </script>
 </head>
 
@@ -16,9 +20,7 @@
     <div class="container" style="margin-bottom:30px;">
         <div class="row">
             <form>
-                <div class="col-md-2">
-                    <div class="btn btn-primary">Back</div>
-                </div>
+                <div class="col-md-2"></div>
                 <div class="col-md-4">
                     <p>
                         <h5 style="color: black;">Choose a vehicle:</h5>
@@ -46,7 +48,7 @@
                         <img src="images/car4.png" height="100" width="187" /> CRO79830 </h6>
                 </div>
                 <div class="col-md-3">
-                    <input type="submit" class="btn btn-success" value="Configure route">
+                    <input id="configure-route-btn" type="submit" class="btn btn-success" page="configure-route.html" value="Configure route">
                 </div>
             </form>
         </div>

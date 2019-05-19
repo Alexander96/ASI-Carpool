@@ -56,3 +56,31 @@
     width: 180px;
     height: 180px;
 }
+
+
+
+.testimonial-box img {
+    display: inline-block;
+    width: 90px;
+    height:90px;
+    border-radius: 50%;
+    margin: 0 0 15px;
+}
+.testimonial-box h4 {
+    color: #fe4819;
+}
+.testimonial-box p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom:50px;
+}
+.ratings-icons {
+    color: #fec42d;
+    margin-bottom: 15px;
+}
+
+.review-img {
+    align-self: center;
+

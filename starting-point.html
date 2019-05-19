@@ -1,24 +1,18 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-3">
             <div class="container">
-                <p>
-                    <span>
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-addon" id="sizing-addon1">Starting point</span>
-                            <input type="text" class="form-control" placeholder="Enter address">
-                        </div>
-                    </span>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="submit" class="btn btn-primary" value="Back">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="submit" class="btn btn-success" value="Select destination">
-                        </div>
-                    </div>
-                </p>
+                <input type="submit" class="btn btn-primary" value="Back">
+                <div class="container">
+                    <p>
+                        <span>
+                            <p>
+                                <h4 style="color: black;">Select starting point</h4>
+                            </p>
+                            <input type="text" class="form-control" required placeholder="Enter address">
+                        </span>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="col-md-6">
@@ -33,19 +27,22 @@
                         .mapouter {
                             position: relative;
                             text-align: right;
-                            height: 250px;
+                            height: 500px;
                             width: 500px;
                         }
 
                         .gmap_canvas {
                             overflow: hidden;
                             background: none!important;
-                            height: 250px;
+                            height: 500px;
                             width: 500px;
                         }
                     </style>
                 </div>
             </div>
+        </div>
+        <div class="col-md-3">
+            <input type="submit" class="btn btn-success" value="Select destination">
         </div>
     </div>
 </div>
